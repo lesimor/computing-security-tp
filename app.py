@@ -52,5 +52,5 @@ def get_id_pw():
 
         return response
     elif request.method == "OPTIONS":
-        response.headers.add("Access-Control-Allow-Credentials", True)
+        response.headers.add("Access-Control-Allow-Credentials", "true")
     return response

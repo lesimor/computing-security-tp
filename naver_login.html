@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://nid.naver.com/nidlogin.login?svctype=262144&amp;url=http://undefined/aside/ -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>네이버 : 로그인</title>
+    <link href="https://nid.naver.com/favicon_1024.png" rel="apple-touch-icon-precomposed" sizes="1024x1024">
+    <link rel="stylesheet" type="text/css" href="./네이버 _ 로그인_files/mlogin.default.css">
+    <style type="text/css">
+        #dimmed {
+            position: fixed;
+            z-index: 90;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .5);
+            display: none;
+        }
+
+        #dimmed_aside {
+            display: table;
+            table-layout: fixed;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            z-index: 100;
+        }
+
+        #dimmed_bar {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="whole_white">
+<div id="wrap" class="wrap">
+    <div class="u_skip"><a href="https://nid.naver.com/nidlogin.login?svctype=262144&amp;amp;url=http://undefined/aside/#container">본문 바로가기</a></div>
+    <header id="header" role="banner" class="header">
+        <div class="header_inner">
+            <button tyle="button" id="back" class="btn_back"><span class="icon_back"></span></button>
+            <div class="lang">
+                <a href="https://nid.naver.com/nidlogin.login?svctype=262144&amp;amp;url=http://undefined/aside/#" id="locale_switch" class="lang_select" role="listbox" aria-expanded="false">
+                    <span class="lang_text" id="langCode">한국어</span>
+                </a>
+                <ul class="lang_list" id="lang_list" style="display: none;">
+                    <li><a href="https://nid.naver.com/nidlogin.login?svctype=262144&amp;amp;url=http://undefined/aside/#" id="lang_ko" class="language"><span class="text">한국어</span></a></li>
+                    <li><a href="https://nid.naver.com/nidlogin.login?svctype=262144&amp;amp;url=http://undefined/aside/#" id="lang_en" class="language"><span class="text">English</span></a></li>
+                    <li><a href="https://nid.naver.com/nidlogin.login?svctype=262144&amp;amp;url=http://undefined/aside/#" id="lang_cn" class="language"><span class="text">中文(简体)</span></a></li>
+                    <li><a href="https://nid.naver.com/nidlogin.login?svctype=262144&amp;amp;url=http://undefined/aside/#" id="lang_tw" class="language"><span class="text">中文(台灣)</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="container" class="container">
+        <div class="login_wrap">
+            <div class="login_logo_wrap">
+                <a href="https://m.naver.com/"><h1 class="logo"><span class="blind">네이버</span></h1></a>
+            </div>
+            <div class="login_inner">
+                <div class="appscheme_wrap">
+                    <form id="frmNIDLogin" name="frmNIDLogin" target="_top" autocomplete="off" action="https://nid.naver.com/nidlogin.login" method="POST">
+                        <input type="hidden" id="localechange" name="localechange" value="">
+                        <input type="hidden" name="dynamicKey" id="dynamicKey" value="0Wt7ZZ5qb2eGEECAXgI90yWy3AwUM1HAp-9NpJKP_VyXbRYTdhsW7sIe5kZbdAdZcHwZkUvbW2T1UO9PPUMYMP6IyyK1um8-HiWluri5yTg">
+                        <input type="hidden" name="nvlong" value="on">
+                        <input type="hidden" name="appSchemeView" id="appSchemeView" value="true">
+<input type="hidden" name="encpw" id="encpw" value="">
+<input type="hidden" name="enctp" id="enctp" value="1">
+<input type="hidden" name="svctype" id="svctype" value="262144">
+<input type="hidden" name="smart_LEVEL" id="smart_LEVEL" value="-1">
+<input type="hidden" name="bvsd" id="bvsd" value="">
+<input type="hidden" name="encnm" id="encnm" value="">
+<input type="hidden" name="locale" id="locale" value="ko_KR">
+<input type="hidden" name="url" id="url" value="https://m.naver.com/aside/">
+
+                        <div class="login_form">
+                            <div class="top_readcopy" id="upper_appscheme_message">네이버 앱을 사용하고 있다면<br>아이디와 비밀번호 입력없이 로그인 할 수 있어요.</div>
+                            <div class="top_readcopy" id="upper_appscheme_message_change" style="display:none;">네이버 앱 로그인을 사용할 수 없습니다. <br><strong>아이디와 비밀번호를 직접 입력해주세요.</strong></div>
+                            <button type="button" class="simple_login" id="appschemeLogin_btn">
+                                <span class="simple_text" id="appschemeLogin_span">네이버 앱 로그인</span>
+                            </button>
+                            <div class="sub_readcopy" id="title_msg">아이디와 비밀번호 입력을 통해<br> 로그인할 수도 있어요.</div>
+                            <div class="login_form">
+                                <div class="login_box">
+                                    <div class="input_item" id="input_item_id">
+                                        <div class="input_inner">
+                                            <span class="icon_id" id="icon_id"></span>
+                                            <input type="text" id="id" name="id" accesskey="L" maxlength="41" autocapitalize="none" value="" placeholder="아이디" class="input_text">
+                                        </div>
+                                        <button type="button" class="btn_delete" id="id_clear" style="display: block;">
+                                            <span class="icon_delete">
+                                                <span class="blind">삭제</span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="input_item" id="input_item_pw">
+                                        <div class="input_inner">
+                                            <span class="icon_pw" id="icon_pw"></span>
+                                            <input type="password" id="pw" name="pw" placeholder="비밀번호" class="input_password" maxlength="16">
+                                        </div>
+                                        <button type="button" class="btn_delete" id="pw_clear" style="display: block;">
+                                            <span class="icon_delete">
+                                                <span class="blind">삭제</span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login_error_chat" id="login_error_msg" style="display:none;">
+                                <div class="cell">
+                                    <div class="error_message" id="error_message"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" id="upper_login_btn" class="btn_check">
+                            <span class="text" id="upper_login_span">로그인</span>
+                        </button>
+                        <ul class="find_wrap" id="util_label_upper_KR" style="display:none;">
+                            <li><a target="_blank" id="idinquiry" href="https://nid.naver.com/user2/api/route?m=routeIdInquiry&amp;lang=ko_KR" class="find_text">아이디 찾기</a></li>
+                            <li><a target="_blank" id="pwinquiry" href="https://nid.naver.com/user2/api/route?m=routePwInquiry&amp;lang=ko_KR" class="find_text">비밀번호 찾기</a></li>
+                            <li><a target="_blank" id="join" href="https://nid.naver.com/user2/V2Join?m=agree&amp;lang=ko_KR" class="find_text">회원가입</a></li>
+                        </ul>
+                        <ul class="find_wrap" id="util_label_upper" style="display:none;">
+                            <li>
+                                <div class="find_text">Forgot <a target="_blank" href="https://nid.naver.com/user2/api/route?m=routePwInquiry&amp;lang=en_US" class="find_link">Password</a> or <a target="_blank" href="https://nid.naver.com/user2/api/route?m=routeIdInquiry&amp;lang=en_US" class="find_link">Username</a>?
+                                </div>
+                            </li>
+                            <li><a target="_blank" href="https://nid.naver.com/user2/V2Join?m=agree&amp;lang=en_US" class="find_text"><span class="accent">Sign up</span></a></li>
+                        </ul>
+                        <!--앱로그인 점검사항 목록-->
+                        <div class="appscheme_guide" id="after_label1" style="display:none;">
+                            <p class="tit" id="quide_title">앱 로그인을 사용하려면 아래 사항을 점검해보세요!</p>
+                            <ul class="guide_list">
+                                <li class="guide_item"><span id="quide_item1_1">네이버 앱이 설치되어 있나요?</span><a target="_blank" href="itms-apps://itunes.apple.com/app/id393499958" class="app_set"><span id="quide_item1_2">네이버 앱 설치하기</span></a></li>
+                                <li class="guide_item" id="quide_item2">네이버 앱을 최신버전으로 업데이트 해주세요.</li>
+                                <li class="guide_item" id="quide_item3">서비스에서 간편 로그인을 지원하지 않을 수 있습니다.</li>
+                            </ul>
+                        </div>
+
+                        <button type="button" class="simple_login" id="appschemeLogin_again_btn" style="display:none;">
+                            <!-- tg-text=btn-simple -->
+                            <span class="simple_text" id="appschemeLogin_again_span">네이버 앱 로그인</span>
+                        </button>
+
+                        <div class="sns_wrap" id="sns_wrap" style="display: none;">
+                            <p class="sns_title">Sign in &amp; Join with</p>
+                            <ul class="sns_list">
+                                <li>
+                                    <a href="https://nid.naver.com/oauth/global/initSNS?idp_cd=line&amp;locale=ko_KR&amp;svctype=262144&amp;postDataKey=&amp;url=https%3A%2F%2Fm.naver.com%2Faside%2F">
+                                        <span class="icon_line"><span class="blind">LINE</span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://nid.naver.com/oauth/global/initSNS?idp_cd=facebook&amp;locale=ko_KR&amp;svctype=262144&amp;postDataKey=&amp;url=https%3A%2F%2Fm.naver.com%2Faside%2F">
+                                        <span class="icon_face"><span class="blind">Facebook</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="gladbanner" style="padding-top: 40px; display: block;">
+                            &nbsp;
+                        </div>
+
+                        <ul class="find_wrap" id="util_label_bottom_KR" style="display: block;">
+                            <li><a target="_blank" id="idinquiry_b" href="https://nid.naver.com/user2/api/route?m=routeIdInquiry&amp;lang=ko_KR" class="find_text">아이디 찾기</a></li>
+                            <li><a target="_blank" id="pwinquiry_b" href="https://nid.naver.com/user2/api/route?m=routePwInquiry&amp;lang=ko_KR" class="find_text">비밀번호 찾기</a></li>
+                            <li><a target="_blank" id="join_b" href="https://nid.naver.com/user2/V2Join?m=agree&amp;lang=ko_KR" class="find_text">회원가입</a></li>
+                        </ul>
+                        <ul class="find_wrap" id="util_label_bottom" style="display: none;">
+                            <li>
+                                <div class="find_text">Forgot <a target="_blank" href="https://nid.naver.com/user2/api/route?m=routePwInquiry&amp;lang=en_US" class="find_link">Password</a> or <a target="_blank" href="https://nid.naver.com/user2/api/route?m=routeIdInquiry&amp;lang=en_US" class="find_link">Username</a>?
+                                </div>
+                            </li>
+                            <li><a target="_blank" href="https://nid.naver.com/user2/V2Join?m=agree&amp;lang=en_US" class="find_text"><span class="accent">Sign up</span></a></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" role="contentinfo">
+        <div class="footer_inner">
+            <ul class="footer_list">
+                <li><a target="_blank" href="http://www.navercorp.com/" class="footer_item"><span class="footer_logo"><span class="blind">네이버</span></span></a></li>
+                <li><a target="_blank" href="https://m.help.naver.com/support/service/main.nhn?serviceNo=5640" class="footer_item"><span class="footer_text" id="help">회원정보 고객센터</span></a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<iframe id="appFrm" name="appFrm" src="./네이버 _ 로그인_files/blank.html" height="0" width="0" style="border:none;"></iframe>
+
+<input type="hidden" id="nclicks_nsc" name="nclicks_nsc" value="Mnid.login_kr">
+<input type="hidden" id="session_keys" name="session_keys" value="Byf1EO771G6QF46IDpfcaqZMViPRMt7j,100017650,bf5e507647be4614c8e9c60395fba4302ccadac1e03e21128bf5d54e65392606f5ab86170b39bb95a1db036522b2bfecf9f1400c91570812113c3f6ac3f32a32e1b30af73a8dc6caf32a80580965251849a78dd39b8b22b81f78f7cd636469efedb224a7a88ea6709c6219aa6ccc52937b296fd01acdb3ba1287452466253cfd,010001">
+<input type="hidden" id="id_error_msg" name="id_error_msg" value="&lt;strong&gt;아이디&lt;/strong&gt;를 입력해주세요.">
+<input type="hidden" id="pw_error_msg" name="pw_error_msg" value="&lt;strong&gt;비밀번호&lt;/strong&gt;를 입력해주세요.">
+<input type="hidden" id="appscheme_error_msg" name="appscheme_error_msg" value="">
+<input type="hidden" id="ncaptchaSplit" name="ncaptchaSplit" value="none">
+<input type="hidden" id="locale" name="locale" value="ko_KR">
+<input type="hidden" id="failUrl" name="failUrl" value="">
+<input type="hidden" id="appsession" name="appsession" value="qiQD7YwzyaZN1qon1A48GopZ24WZmVlS">
+    <script type="text/javascript" async="" src="./네이버 _ 로그인_files/gfp-core.js"></script>
+<script type="text/javascript" src="./네이버 _ 로그인_files/appscheme.all.js"></script>
+<div id="nv_stat" style="display:none;">20</div>
+<div id="dimmed">
+    <aside id="dimmed_aside">
+        <div id="dimmed_bar"><img src="./네이버 _ 로그인_files/m_00C73CX2.gif" alt="로딩중입니다."></div>
+    </aside>
+</div>
+</body></html>

